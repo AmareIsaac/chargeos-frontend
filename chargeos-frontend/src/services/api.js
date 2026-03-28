@@ -1,4 +1,4 @@
-const API_BASE = '/api';
+const API_BASE = import.meta.env.VITE_API_URL || 'http://ec2-18-189-27-180.us-east-2.compute.amazonaws.com:3001/api';
 
 export function getToken() {
   return localStorage.getItem('chargeos_token');
